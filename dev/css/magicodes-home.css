@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* ========================================
+ * Magicodes.Home CSS
+ * ver. 0.0.000
+ * by taojiachun
+ * ======================================== */
+
+
+
+
+/* ========================================
+ * reset
+ * ======================================== */
+
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+legend,
+fieldset,
+input,
+textarea,
+p,
+q,
+blockquote,
+caption,
+th,
+td,
+header,
+nav,
+aside,
+section,
+hgroup,
+article,
+footer {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+img,
+button,
+fieldset {
+  border:0;
+}
+button {
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+}
+td {
+  vertical-align: top;
+}
+ul {
+  list-style: none;
+}
+/* ol: only for webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  ol {
+    margin-left: 1.5rem;
+  }
+}
+/* ol: only for firefox */
+@-moz-document url-prefix(){
+  ol {
+    margin-left: 1.2rem;
+  }
+}
+/* ol: only for ie8 to ie11 */
+@media screen\0 {
+  ol {
+    margin-left: 1.7rem;
+  }
+}
+input,
+select,
+textarea {
+  border: 1px solid #000;
+  box-shadow: none;
+  outline: none;
+}
+a {
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2.0rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+label,
+i,
+span {
+  display: inline-block;
+}
+
+
+
+
+/* ========================================
+ * theme
+ * ======================================== */
+
+
+/* 通用：顶部菜单 */
+
+.topbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  z-index: 999;
+}
+.top-menu {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.top-menu > div {
+  float: left;
+  margin-right: 30px;
+}
+.top-menu > div:first-child {
+  margin-right: 15px;
+}
+.top-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.top-menu a:active {
+  color: rgb(128, 176, 232);
+}
+.top-user-menu {
+  float: right;
+  color: #ddd;
+}
+.top-user-menu > div {
+  float: left;
+  margin-right: 10px;
+  padding: 0 10px;
+  background: rgba(25, 61, 103, 0.8);
+  border-radius: 4px;
+}
+.top-user-menu a {
+  color: #ddd;
+  text-decoration: none;
+}
+.top-user-menu a:hover {
+  color: #fff;
+}
+.top-user-menu a:active {
+  color: rgb(128, 176, 232);
+}
+
+
+/* 首页：巨幕 */
+
+.face {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg-index.png) no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.face-m-group {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.face-m-logo {
+  float: left;
+  width: 128px;
+}
+.face-m-title {
+  float: left;
+  margin: 0 0 0 10px;
+}
+.face-m-title > span {
+  color: #fff;
+  font-size: 6.4rem;
+  font-weight: bold;
+  font-family: Courier;
+  text-shadow: 2px 1px 0 rgb(81, 130, 186);
+}
+.face-m-title > .face-m-subtitle {
+  margin: -10px 0 0 0;
+  color: #fff;
+  font-size: 2.8rem;
+}
+.face-m-about {
+  clear: both;
+  padding: 40px 100px;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.face-btn-group {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+.face-btn-group > button {
+  display: block;
+  width: 198px;
+  margin: 5px auto;
+  padding: 10px 0 10px 30px;
+  background: rgba(17, 17, 17, 0.8);
+  border-radius: 4px;
+  border: 1px solid #333;
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: left;
+}
+.face-btn-group > button:hover {
+  background: rgba(25, 61, 103, 0.8);
+  border-color: #ccc;
+}
+.face-btn-group > button:active {
+  border-color: rgba(25, 61, 103, 0.8);
+}
+.face-btn-group > button i:after {
+  content: "\00a0"
+}
+.face-btn-group > button:first-child {
+  margin-top: 0;
+}
+.face-btn-group > button:last-child {
+  margin-bottom: 0;
+}
+
+
+/* 首页：宣传文字 */
+
+
+
+
+
+
+/* 底部 */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  z-index: 998;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
