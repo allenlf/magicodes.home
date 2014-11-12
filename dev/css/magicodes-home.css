@@ -207,7 +207,7 @@ span {
 .face {
   width: 100%;
   height: 100%;
-  background: url(../img/bg-index.png) no-repeat;
+  background: url(../img/bg-index2.png) no-repeat;
   background-attachment: fixed;
   background-size: 100%;
 }
@@ -289,7 +289,7 @@ span {
   background: rgb(14, 67, 28);
 }
 .m-intro-style3 {
-  background: url(../img/bg-grain.png) repeat, rgb(131, 24, 24);
+  background: url(../img/bg-grain1.png) repeat, rgb(131, 24, 24);
 }
 .m-intro-style4 {
   background: rgba(0, 0, 0, 1);
@@ -317,14 +317,14 @@ span {
   padding: 20px 0;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-shadow: 1px 1px 1px #000;
 }
 .m-intro-style3 h3 {
   padding: 10px 0;
   text-align: center;
   color: rgb(239, 239, 239);
-  font-size: 2.0rem;
+  font-size: 2.2rem;
 }
 .m-intro-style3 p {
   padding: 5px 0;
@@ -333,7 +333,7 @@ span {
   font-size: 1.6rem;
 }
 .m-intro-style4 h2 {
-  font-size: 2.0rem;
+  font-size: 1.8rem;
   padding: 20px 0;
   color: #fff;
 }
@@ -417,6 +417,56 @@ span {
 }
 
 
+/* 通用页面 */
+
+.m-page-title {
+  width: 100%;
+  height: 100px;
+  padding: 80px 0;
+  background: url(../img/bg-grain1.png) repeat, rgb(0, 0, 0);
+}
+.m-page-title h1 {
+  position: absolute;
+  left: 8%;
+  color: #fff;
+  font-size: 3.0rem;
+  text-shadow: 2px 1px 0 rgb(0, 0, 0);
+}
+.m-page-main {
+  margin-left:  8%;
+  margin-right: 8%;
+  padding: 40px;
+  background: #fff;
+}
+.m-page-main > h2 {
+  font-size: 2.0rem;
+  padding: 20px 0 10px 0;
+  color: #333;
+}
+.m-page-main > p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 5px 0;
+  color: #333;
+}
+.m-page-main ol {
+  margin-left: 2.8rem;
+}
+.m-page-main ol > li {
+  line-height: 2.4rem;
+}
+.m-page-main .copyright {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+}
+
+
+
+
+
 /* 底部 */
 
 .footer {
@@ -425,7 +475,7 @@ span {
   width: 100%;
   padding: 10px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #fff;
   z-index: 998;
 }
