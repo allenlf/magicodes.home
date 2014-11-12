@@ -1,0 +1,13 @@
+{
+  "name": "Magicodes.Home",
+  "description": "Promotion pages for Magicodes.NET",
+  "launch_path": "/dev/index.html",
+  "icons": {
+    "128": "/dev/img/icon-128.png"
+  },
+  "developer": {
+    "name": "taojiachun / Team Magicodes",
+    "url": "http://magicodes.net"
+  },
+  "default_locale": "zh"
+}

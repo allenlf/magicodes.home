@@ -15,6 +15,21 @@
 +function ($) {
   'use strict';
   
+  $(".m-home").animate({opacity: "1"}, 1000);
+  
+}(jQuery);
+
+
+
+
+/* ========================================
+ * Homepage
+ * 顶部 topbar & 底部 footer 背景变色
+ * ======================================== */
+
++function ($) {
+  'use strict';
+  
   $(window).scroll(function () {
     
     /* topbar */
@@ -50,5 +65,62 @@
   'use strict';
   
   $(".face").css("height", window.innerHeight);
+  
+}(jQuery);
+
+
+
+
+/* ========================================
+ * Homepage
+ * m-introduce 介绍文字切换
+ * ======================================== */
+
++function ($) {
+  'use strict';
+  
+  var bTitle, bText, fTitle, fText, $thisTitle, $thisText;
+  
+  /* 后端 */
+  bTitle = $("#intro-back").find(".intro-title");
+  bText = $("#intro-back").find(".intro-text");
+  
+  /* 前端 */
+  fTitle = $("#intro-front").find(".intro-title");
+  fText = $("#intro-front").find(".intro-text");
+  
+  bTitle.mouseup(function () {
+    
+    var bId;
+    $thisTitle = $(this);
+    bId = $thisTitle.data("btitleid");
+
+    bText.each(function () {
+      $thisText = $(this);
+      if ($thisText.data("btextid") === bId) {
+        $thisText.slideDown(1000);
+      } else {
+        $thisText.slideUp(800);
+      }
+    });
+
+  });
+  
+  fTitle.mouseup(function () {
+    
+    var fId;
+    $thisTitle = $(this);
+    fId = $thisTitle.data("ftitleid");
+
+    fText.each(function () {
+      $thisText = $(this);
+      if ($thisText.data("ftextid") === fId) {
+        $thisText.slideDown(1000);
+      } else {
+        $thisText.slideUp(800);
+      }
+    });
+
+  });
   
 }(jQuery);
