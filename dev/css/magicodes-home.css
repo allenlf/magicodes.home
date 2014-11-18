@@ -207,7 +207,7 @@ span {
 .face {
   width: 100%;
   height: 100%;
-  background: url(../img/bg-index2.png) no-repeat;
+  background: url(../img/bg-index.png) no-repeat;
   background-attachment: fixed;
   background-size: 100%;
 }
@@ -252,7 +252,7 @@ span {
   width: 198px;
   margin: 5px auto;
   padding: 10px 0 10px 30px;
-  background: rgba(17, 17, 17, 0.8);
+  background: rgba(17, 17, 17, 0.6);
   border-radius: 4px;
   border: 1px solid #333;
   font-size: 1.4rem;
@@ -291,11 +291,6 @@ span {
 .m-intro-style3 {
   background: url(../img/bg-grain1.png) repeat, rgb(131, 24, 24);
 }
-.m-intro-style4 {
-  background: rgba(0, 0, 0, 1);
-  padding-bottom: 60px;
-  padding-bottom: 120px;
-}
 .m-introduce > h2 {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -332,29 +327,6 @@ span {
   color: rgb(239, 239, 239);
   font-size: 1.6rem;
 }
-.m-intro-style4 h2 {
-  font-size: 1.8rem;
-  padding: 20px 0;
-  color: #fff;
-}
-.m-intro-style4 p {
-  font-size: 1.4rem;
-  padding: 5px;
-  color: #ccc;
-}
-.m-intro-style4 a {
-  color: #efefef;
-}
-.m-intro-style4 a:hover {
-  color: rgb(128, 176, 232);
-  text-decoration: none;
-}
-.m-intro-style4 a:before {
-  content: "\00a0";
-}
-.m-intro-style4 img {
-  height: 1.6rem;
-}
 .m-introduce .intro-title {
   float: left;
   margin: 4px; 
@@ -367,11 +339,15 @@ span {
 }
 .m-intro-style1 .intro-title {
   width: 120px;
+  background: rgb(22, 48, 77);
+  color: #ccc;
 }
 .m-intro-style2 .intro-title {
   width: 230px;
   margin: 4px auto;
   padding: 10px 20px;
+  background: rgb(10, 46, 19);
+  color: #ccc;
 }
 .m-intro-style1 .intro-title:hover {
   background: rgb(25, 61, 103);
@@ -421,8 +397,8 @@ span {
 
 .m-page-title {
   width: 100%;
-  height: 100px;
-  padding: 80px 0;
+  height: 180px;
+  padding: 80px 0 0 0;
   background: url(../img/bg-grain1.png) repeat, rgb(0, 0, 0);
 }
 .m-page-title h1 {
@@ -432,54 +408,206 @@ span {
   font-size: 3.0rem;
   text-shadow: 2px 1px 0 rgb(0, 0, 0);
 }
+.m-page-title h2 {
+  position: absolute;
+  left: 8%;
+  margin-top: 4.2rem;
+  color: rgb(109, 109, 109);
+  font-size: 1.8rem;
+}
 .m-page-main {
   margin-left:  8%;
   margin-right: 8%;
   padding: 40px;
   background: #fff;
 }
-.m-page-main > h2 {
+.m-page-main h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 30px 0 10px 0;
+  border-bottom: 1px dotted #ddd;
+  color: #000;
+}
+.m-page-main h2:first-child {
+  padding-top: 0;
+}
+.m-page-main h3 {
   font-size: 2.0rem;
-  padding: 20px 0 10px 0;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  color: #000;
+}
+.m-page-main h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  color: #000;
+}
+.m-page-main h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  color: #000;
+}
+.m-page-main h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
   color: #333;
 }
-.m-page-main > p {
+.m-page-main p {
   font-size: 1.4rem;
   line-height: 2.4rem;
   padding: 5px 0;
   color: #333;
 }
+.m-page-main ul,
 .m-page-main ol {
   margin-left: 2.8rem;
 }
+.m-page-main ul > li,
 .m-page-main ol > li {
   line-height: 2.4rem;
 }
-.m-page-main .copyright {
-  padding: 40px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #999;
+.m-page-main ul > li {
+  list-style: disc;
 }
 
 
+/* 通用页面：侧边栏 aside */
 
+.m-page-main .aside {
+  float: left;
+  width: 180px;
+  padding: 0 1.0rem;
+  border-right: 1px solid rgba(194, 199, 209, 0.7);
+}
+.m-page-main .aside ul {
+  margin: 0;
+}
+.m-page-main .aside li {
+  list-style: none;
+}
+.m-page-main .aside a {
+  color: #999;
+}
+.m-page-main .aside > ul > li > a {
+  display: block;
+  padding: 0.4rem 1.0rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.m-page-main .aside > ul > .active > a,
+.m-page-main .aside > ul > li > a:hover {
+  background: #efefef;
+  border-radius: 4px;
+  color: #0d3284;
+  font-weight: bold;
+}
+.m-page-main .aside > ul > li > a:active {
+  background: #ddd;
+}
+.m-page-main .aside > ul > li > .nav > li > a {
+  padding: 0;
+}
+.m-page-main .aside > ul > li > .nav > li > a:hover {
+  background: none;
+}
+.m-page-main .aside > ul > li > ul {
+  display: none;
+  margin: 0.5rem 2.2rem;
+}
+.m-page-main .aside > ul > li > ul > .active > a,
+.m-page-main .aside > ul > li > ul > li > a:hover {
+  font-weight: bold;
+  color: #0d3284;
+  text-decoration: none;
+}
+
+.m-page-main .with-aside {
+  position: relative;
+  margin-left: 220px;
+}
+
+.m-page-main .copyright {
+  padding: 40px;
+}
+
+.m-page-main .ts {
+  font-size: 1.2rem;
+}
+.m-page-main .tl {
+  font-size: 1.6rem;
+}
+.m-page-main .tc {
+  text-align: center;
+}
+.m-page-main .tb {
+  font-weight: bold;
+}
+.m-page-main .tgray {
+  color: #999;
+}
+.m-page-main .tred {
+  color: #b12b2b;
+}
+.m-page-main .tgreen {
+  color: #207c2e;
+}
+.m-page-main .tblue {
+  color: #24589f;
+}
 
 
 /* 底部 */
 
 .footer {
-  position: fixed;
+  padding: 20px 0 0 0;
+  background: rgba(0, 0, 0, 1);
+}
+.footer > .container {
+  padding-bottom: 60px;
+}
+.footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  padding: 20px 0 10px 0;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+.footer p {
+  font-size: 1.4rem;
+  padding: 5px;
+  color: #ccc;
+}
+.footer a {
+  color: #efefef;
+}
+.footer a:hover {
+  color: rgb(128, 176, 232);
+  text-decoration: none;
+}
+.footer a:before {
+  content: "\00a0";
+}
+.footer img {
+  height: 1.6rem;
+}
+
+.footer-sole {
   bottom: 0;
   width: 100%;
   padding: 10px;
   text-align: center;
   font-size: 1.4rem;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   z-index: 998;
 }
-
+.m-home > .footer-sole {
+  position: fixed;
+  background: none;
+}
 
 
 
