@@ -1,4 +1,4 @@
 magicodes.home
 ==============
 
-Appeal pages for Magicodes.
+Homepage UI for Magicodes.NET
