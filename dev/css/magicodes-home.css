@@ -559,6 +559,20 @@ span {
 }
 
 
+/* 表单 */
+
+.form-small {
+  width: 50rem;
+  margin: auto;
+  padding: 40px 0;
+}
+.form-small .m-alert {
+  margin-top: 5px;
+}
+
+
+
+
 /* 底部 */
 
 .footer {

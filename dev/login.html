@@ -74,43 +74,44 @@
 </div>
 
 <div class="m-page-title">
-  <h1>通用页面.h1.页面大标题</h1>
-  <h2>h2.页面副标题</h2>
+  <h1>登录</h1>
+  <h2>还可以选择QQ和微软等帐号登录</h2>
 </div>
 <div class="m-page-main">
-  <h2>h2.大标题</h2>
-  <h3>h3.中标题</h3>
-  <h4>h4.标题</h4>
-  <h5>h5.小标题</h5>
-  <h6>h6.微标题</h6>
-  <p>
-    p.段落
-  </p>
-  <p>
-    <ol>
-      <li>ol.有序列表</li>
-      <li>ol.有序列表</li>
-      <li>ol.有序列表</li>
-    </ol>
-  </p>
-  <p>
-    <ul>
-      <li>ul.无序列表</li>
-      <li>ul.无序列表</li>
-      <li>ul.无序列表</li>
-    </ul>
-  </p>
-  <p>
-  <p>默认文字</p>
-    <p class="ts">ts.小号字</p>
-    <p class="tl">tl.大号字</p>
-    <p class="tb">tb.粗体字</p>
-    <p class="tc">tc.文字居中</p>
-    <p class="tgray">tgray.灰色</p>
-    <p class="tred">tred.红色</p>
-    <p class="tgreen">tgreen.绿色</p>
-    <p class="tblue">tblue.蓝色</p>
-  </p>
+
+  <form role="form" class="form-small" id="login">
+    <div class="form-group">
+      <label for="InputEmail1">用户名或邮箱</label>
+      <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="InputPassword1">登录密码</label>
+      <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> 记住我
+      </label>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">
+      <i class="fa fa-smile-o"></i>
+      登录网站
+      </button>
+      <button type="submit" class="btn btn-warning">
+      <i class="fa fa-meh-o"></i>
+      忘记密码
+      </button>
+      <button type="submit" class="btn btn-primary" onclick="javascript:document.getElementById('qqLogin').click();">
+        <i class="fa fa-qq"></i>
+        QQ登录
+      </button>
+      <button type="submit" class="btn btn-primary" id="Microsoft" name="provider" value="Microsoft" title="使用你的 Microsoft 帐户登录">
+        <i class="fa fa-windows"></i>
+        Microsoft账户登录
+      </button>
+    </div>
+  </form>
   
 </div>
 

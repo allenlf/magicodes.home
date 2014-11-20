@@ -1,6 +1,6 @@
 /* ========================================
  * Magicodes Home Front-end JavaScript
- * ver. 0.0.000
+ * ver. 0.0.100
  * by taojiachun
  * ======================================== */
 
@@ -166,7 +166,6 @@
 +function ($) {
   'use strict';
   
-  
   // 侧边栏菜单的展开与收缩
   
   var $as, $asLa;
@@ -202,10 +201,49 @@
 
 
 
+/* ========================================
+ * 注册和登录页
+ * register & login
+ * ======================================== */
 
++function ($) {
+  'use strict';
+  
+  var rEmail, rUser, rPswd1, rPswd2, rAccept;
+  rEmail = $("#register").find("#InputEmail");
+  rUser = $("#register").find("#InputUsername");
+  rPswd1 = $("#register").find("#InputPassword1");
+  rPswd2 = $("#register").find("#InputPassword2");
+  rAccept = $("#register").find("#AcceptRegisterLicense");
+  
+//  console.log(rEmail.val(), rUser.val(), rPswd1.val(), rPswd2.val(), rAccept.attr("checked"));
 
-
-
+  
+  // 判断用户名字数
+  
+  rUser.focusout(function () {
+    if (rUser.val().length < 1 && rUser.next(".m-alert").length === 0) {
+      rUser.parent().append('<div class="m-alert alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>用户名字数必须大于2</div>');
+    }
+    if (rUser.val().length >= 1) {
+      rUser.next(".m-alert").remove();
+    }
+    // （还要加非法字符判断）
+  });
+  
+  
+  // 判断两个密码是否相同
+  rPswd2.focusout(function () {
+    if (rPswd2.val() !== rPswd1.val() && rPswd2.next(".m-alert").length === 0) {
+      rPswd2.parent().append('<div class="m-alert alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>两次输入的密码不同</div>');
+    }
+    if (rPswd2.val() === rPswd1.val()) {
+      rPswd2.next(".m-alert").remove();
+    }
+  });
+  
+  
+}(jQuery);
 
 
 
