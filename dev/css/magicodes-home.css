@@ -248,7 +248,7 @@ span {
   .top-user-menu > li > span {
     display: none;
   }
-  .top-user-menu > li > .logout {
+  .top-user-menu > li > a {
     display: block;
   }
 }
@@ -283,7 +283,7 @@ span {
   .top-user-menu > li > span {
     display: inline;
   }
-  .top-user-menu > li > .logout {
+  .top-user-menu > li > a {
     display: inline;
   }
 }
